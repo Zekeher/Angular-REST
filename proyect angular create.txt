@@ -1,0 +1,7 @@
+ng new AngularApp --routing -sg -si -sc --style scss
+
+-si = Skip NPM Install
+-sg = Skip Git Init
+-sc = Skip Commit
+--style scss = Crear archivos SASS (SCSS)
+--routing = Crea el router por defecto 
