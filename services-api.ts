@@ -9,6 +9,9 @@ import { Http, RequestOptions, RequestOptionsArgs, Headers } from '@angular/http
 import { Observable } from 'rxjs';
 
 // Esto es un services.ts de Angular
+// este services tiene que ser declarado en app.module.ts
+
+se declara en  providers: NameServices
 
 @Injectable()
 export class NameServices {
