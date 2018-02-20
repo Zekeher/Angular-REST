@@ -10,8 +10,9 @@ import { Observable } from 'rxjs';
 
 // Esto es un services.ts de Angular
 // este services tiene que ser declarado en app.module.ts
+//se declara en  providers: NameServices
 
-se declara en  providers: NameServices
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 @Injectable()
 export class NameServices {
@@ -39,7 +40,7 @@ export class NameServices {
     }
 }
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////
 /// CREAMOS UN COMPONENTE o DEL COMPONENTE YA CREADO
 // importamos el services para poderlo llamar
 

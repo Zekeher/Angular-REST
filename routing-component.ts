@@ -16,6 +16,8 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 // importar
 import { ActivatedRoute, Router, Event, NavigationEnd } from '@angular/router';
 
@@ -32,6 +34,8 @@ constructor(private _route: ActivatedRoute, private router: Router) {
         }
     });
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 // lo declaramos en app.module.ts
 
