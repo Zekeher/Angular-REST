@@ -8,64 +8,45 @@ Instrucciones:
     creamos una funcion donde vamos a setear el titulo contenido y un booleano para mostrar el modal.
 
     Ejemplos: 
-
               ////////////////////////////--------OPCION 1------///////////////////////////////
               
               /// HTML
-              <button (click)="setModal('title', 'content', 'true')">mostrar modal</button>
+              <button (click)="setModal('title', 'content')">mostrar modal</button>
               
               /// Component
-              **** Creamos 3 "variables"
-              private ingresarTitulo: string;
-              private ingresarContenido: string;
-              private ingresarBoolean: boolean;
-
-              **** Creamos una funcion setModal con los parametros correspondientes
-
-              setModal(title:string, content:string, show:boolean){
-                this.ingresarTitulo = title;
-                this.ingresarContenido = content;
-                this.ingresarBoolean = show; // tenemos que ingresar true para que se muestre el modal
-              }
-
-              ocultarModal($event: boolean){
-                  this.ingresarBoolean = $event; // recibimos un false para que se oculte el modal
-              }
-
-              ////////////////////////////--------OPCION 2------///////////////////////////////
-              
-              /// HTML
-              <button (click)="setModal(title, content)">mostrar modal</button>
-
-              /// Component
-              **** Creamos 3 "variables"
-              private ingresarTitulo: string;
-              private ingresarContenido: string;
-              private ingresarBoolean: boolean;
+              **** Creamos CREAMOS UNA VARIABLE POR DEFAULT
+              private dataModal: any = [{
+               show: false,
+               title: "",
+               content: []
+              }];
 
               **** Creamos una funcion setModal con los parametros correspondientes
 
               setModal(title:string, content:string){
-                this.ingresarTitulo = title;
-                this.ingresarContenido = content;
-                this.ingresarBoolean = true;
+                this.dataModal = [];
+                this.dataModal.push({
+                  show: true,
+                  title: title,
+                  content: content
+                });
               }
 
-              ocultarModal($event: boolean){
-                  this.ingresarBoolean = $event; // recibimos un false para que se oculte el modal
+               hiddenModal($event: boolean) {
+                  this.dataModal = [];
+                  this.dataModal.push({
+                  show: false
+                });
               }
 
               NOTA: Se puede implementar la logia de varias formas. solamente respeta que siempre se envian 3 datos;
               
 2) En el HTML correspondiente llamamos este componente con la siguiente estructura (esto es un ejemplo con sus variables)
-tienen que respetar la etiqueta <view-modal> y los [titleModal], [contentModal], [showModal].
+tienen que respetar la etiqueta <view-modal> y los (hideModal), [getModal].
 
-              <view-modal 
-              [titleModal]="ingresarTitulo" 
-              [contentModal]="ingresarContenido" 
-              [showModal]="ingresarBoolean"
-              (hideModal)="ocultarModal($event)">
-              </view-modal>
+<!-- Modal Component -->
+        <view-modal (hideModal)="hiddenModal($event)" [getModal]="dataModal"></view-modal>
+<!-- End Modal Component -->
               
 by Ezequiel 'Zekeher' Hermoso
 */

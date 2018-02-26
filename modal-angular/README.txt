@@ -15,6 +15,14 @@ Para llamarlo atravez de un link o button asignar en el html la funcion "(click)
 
 /////////////////////////////////////////////
 component TS como mandar informacion desde el componente deseado
+///////////////////////////// en el css generar o del componente deseado ingresar lo siguiente
+// Style Modal
+view-modal{
+    position: absolute;
+    top:8%;
+    left:20%;
+}
+
 /////////////////////////////////////////////
 1) crear una variable con los siguientes parametros por default
 
