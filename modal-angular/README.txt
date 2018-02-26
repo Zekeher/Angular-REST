@@ -1,4 +1,9 @@
 /////////////////////////////////////////////
+Declarar el componente modal en app.component.ts
+
+import { ModalComponent } from './modal-angular/modal.component';
+
+/////////////////////////////////////////////
 component HTML para llamar el modal
 /////////////////////////////////////////////
 <!-- Modal Component -->
