@@ -1,5 +1,12 @@
 <div class="container">
     <h1 class="title-h1">Angular ejemplos</h1>
+    <hr>
+    <div class="code-example">
+        <p>Para crear un proyecto y la estructura de angular de 0 (CERO) en consola ingresamos el siguiente comando:</p>
+        <p><span>ng new AngularApp --style scss</span></p>
+        <p>--style scss = Crear archivos SASS (SCSS)</p>
+    </div>
+    <hr>
     <div *ngFor="let example of examples" class="col-md-3" id="{{example.id}}">
         <h2 class="title-h2">{{example.title}}</h2>
         <p class="detail-example">{{example.detail}}</p>

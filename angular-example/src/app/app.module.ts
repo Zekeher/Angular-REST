@@ -11,11 +11,10 @@ import { ModalComponent } from './content/modal/modal-angular/modal.component';
 import { ModalExampleComponent } from './content/modal/modal-example/modal-example.component';
 import { ListComponent } from './list/list.component';
 import { ServicesApiComponent } from './content/services-api/services-api.component';
+import { RouterExampleComponent } from './content/router-example/router-example.component';
 
 // Services
 import { ListService } from './list.service';
-
-
 
 @NgModule({
   declarations: [
@@ -23,7 +22,8 @@ import { ListService } from './list.service';
     ModalComponent,
     ListComponent,
     ModalExampleComponent,
-    ServicesApiComponent
+    ServicesApiComponent,
+    RouterExampleComponent
   ],
   imports: [
     BrowserModule,

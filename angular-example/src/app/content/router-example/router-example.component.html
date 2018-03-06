@@ -1,0 +1,18 @@
+<div class="container">
+    <a class="back" [routerLink]="['/']">Volver</a>
+    <hr>
+    <h2>Router Params</h2>
+    <p>Aca vamos a mostrar un ejemplo de como leer los parametros por <span>URL</span></p>
+    <h1>Hola my friend! voce es muito <span style="color:rgb(173, 21, 173)">{{saludo}}</span></h1>
+    <hr>
+    <div class="code-example">
+        <h3 class="title">Instrucciones para cambiar el saludo</h3>
+        <p>Si queres ver como funciona por favor en la url remplace la palabra "<span style="color:rgb(226, 43, 52)">Bonit@</span>" por otra palabra y luego presione <span>ENTER</span></p>
+        <h1><span style="color:rgb(173, 21, 173)">Hola my friend! voce es muito {{saludo}}</span></h1>
+    </div>
+    <div class="code-example">
+        <h3 class="title">Instrucciones para integrar al componente</h3>
+        <p>Para leer los parametros dentro de un componente hacemos lo siguiente:</p>
+        <textarea [innerHTML]="routerExample"></textarea>
+    </div>
+</div>
