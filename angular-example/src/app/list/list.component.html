@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="title-h1">Angular ejemplos</h1>
+    <div *ngFor="let example of examples" class="col-md-3" id="{{example.id}}">
+        <h2 class="title-h2">{{example.title}}</h2>
+        <p class="detail-example">{{example.detail}}</p>
+        <button type="button" class="btn btn-show" [routerLink]="['/'+example.path]">Ver ejemplo...</button>
+    </div>
+</div>

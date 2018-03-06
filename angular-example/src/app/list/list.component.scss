@@ -1,0 +1,32 @@
+@import '../../assets/colors';
+.container {
+    .title-h1 {
+        margin-bottom: 25px;
+    }
+    .col-md-3 {
+        margin: 8px;
+        margin-left: 0px;
+        border-radius: 12px;
+        padding: 15px;
+        background: $black2;
+        .title-h2 {
+            color: $red;
+            margin-top: 5px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid $black;
+        }
+        .detail-example {
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        .btn-show {
+            background: $red;
+            color: $white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            &:hover {
+                background: $red-hover;
+            }
+        }
+    }
+}

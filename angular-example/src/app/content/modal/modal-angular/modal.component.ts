@@ -14,7 +14,7 @@ Instrucciones:
               <button (click)="setModal('title', 'content')">mostrar modal</button>
               
               /// Component
-              **** Creamos CREAMOS UNA VARIABLE POR DEFAULT
+              **** Creamos CREAMOS UNA VARIABLE POR DEFAULT OBLIGATORIO
               private dataModal: any = [{
                show: false,
                title: "",
@@ -48,6 +48,16 @@ tienen que respetar la etiqueta <view-modal> y los (hideModal), [getModal].
         <view-modal (hideModal)="hiddenModal($event)" [getModal]="dataModal"></view-modal>
 <!-- End Modal Component -->
               
+3) En el Style.css
+    Por favor agregue el siguiente Style osino nunca se va a poder visualizar el modal-angular
+
+          view-modal {
+            position: absolute;
+            top: 8%;
+            left: 20%;
+          }
+
+
 by Ezequiel 'Zekeher' Hermoso
 */
 
@@ -63,15 +73,12 @@ export class ModalComponent {
   @Input() getModal: any;
   @Output() hideModal = new EventEmitter<boolean>();
 
-  private dataModal: any = { title: "Titulo", content: "Contenido", view: "", htmlModal: false, show: false };
-  private show: boolean = false;
-  private modalTemplateHTML: boolean = false;
+  private dataModal: any = { title: "Titulo del modal", content: "Ingrese el Contenido", show: false };
 
   constructor() { }
 
   ngOnChanges() {
     this.dataModal = this.getModal[0];
-    this.show = this.getModal[0].show;
   }
 
   closeModal() {

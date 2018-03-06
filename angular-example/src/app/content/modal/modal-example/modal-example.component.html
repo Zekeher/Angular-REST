@@ -1,0 +1,37 @@
+<div class="container">
+    <a class="back" [routerLink]="['/']">Volver</a>
+    <hr>
+    <h2>Modal Angular by Zekeher</h2>
+    <p>Para abrir el modal por favor haga click <a class="btn-modal" (click)="setModal('Ejemplo Modal', 'Se abrio el modal con exito')">aca</a></p>
+    <hr>
+    <div class="code-example">
+        <h3 class="title">Instrucciones para Modal de Angular</h3>
+        <p>Cuando tengamos nuestra carpeta modal-angular en nuestro proyecto hay que hacer lo siguiente:</p>
+        <ol>
+            <li>
+                Declarar el componente modal-angular en <span>app.module.ts</span> dentro de <span style="color:rgb(173, 21, 173)">declarations</span>
+            </li>
+            <li>
+                Luego en el componente donde queremos mostrar el modal hacemos lo siguiente:<br>
+                <ul>
+                    <li>
+                        Primero creamos una variable por default <span style="color:rgb(226, 43, 52)">OBLIGATORIA!!!</span><br> <span>No se tiene que modificar nada!!!</span>
+                        <textarea [innerHTML]="variableObligation"></textarea>
+                    </li>
+                    <li>
+                        Se tiene que crear la siguiente funcion para que se cierre el modal <span style="color:rgb(226, 43, 52)">OBLIGATORIO!!!</span> <br> <span>No se tiene que modificar nada!!!</span>
+                        <textarea [innerHTML]="closeFunction"></textarea>
+                    </li>
+                    <li>
+                        Despues creamos una funcion para setear los valores que queremos que muestre el modal, esta funcion va ser llamada en un button, link o lo que sea cuando hagamos click con el mouse ( esto es un ejemplo ) <br>
+                        <textarea [innerHTML]="exampleFunction"></textarea>
+                    </li>
+                    <li>
+                        Luego en el Html del componente correspondiente agregamos la etiqueta correspondiente. <br> <span>{{exampleTag}}</span>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+<view-modal (hideModal)="hiddenModal($event) " [getModal]="dataModal "></view-modal>

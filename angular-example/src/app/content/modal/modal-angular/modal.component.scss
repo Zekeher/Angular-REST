@@ -1,0 +1,20 @@
+@import '../../../../assets/colors';
+.view-modal {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    .modal-content {
+        width: 800px;
+        max-height: 700px;
+    }
+    .modal-body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 400px;
+    }
+}
+
+h4,
+.modal-body {
+    color: $black;
+}

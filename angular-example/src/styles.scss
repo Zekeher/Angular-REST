@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/colors';
+body {
+    color: $white;
+    background: $black;
+    & p,
+    li,
+    label,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: $white;
+    }
+}
+
+.container {
+    padding-top: 15px;
+    width: 100%;
+    .back {
+        color: $white;
+        font-size: 1.7em;
+        letter-spacing: 2px;
+        &:hover {
+            color: $white-hover;
+        }
+    }
+}
+
+// style code-example
+.code-example {
+    margin-top: 15px;
+    padding: 20px;
+    background: $black2;
+    border-radius: 12px;
+    .title {
+        color: $orange;
+        letter-spacing: 1.5px;
+    }
+    hr {
+        border-top: 2px solid $black!important;
+    }
+    span {
+        color: $orange;
+    }
+    textarea {
+        background: $black;
+        width: 100%;
+        min-height: 400px;
+    }
+    li {
+        margin: 8px 0px;
+        textarea {
+            min-height: 150px;
+        }
+    }
+}

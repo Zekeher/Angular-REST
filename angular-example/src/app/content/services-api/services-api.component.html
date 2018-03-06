@@ -1,0 +1,21 @@
+<div class="container">
+    <a class="back" [routerLink]="['/']">Volver</a>
+    <hr>
+    <h2>Services API</h2>
+    <div class="code-example">
+        <h3 class="title">Services</h3>
+        <p>Creamos un services para tener la conexion de los servicios correspondientes que queremos obtener.</p>
+        <p>Para eso generamos un services atravez de consola con: <span>npm g s name</span></p>
+        <hr>
+        <textarea [innerHTML]="exampleServices"></textarea>
+    </div>
+
+    <div class="code-example">
+        <h3 class="title">Componente</h3>
+        <p>Declaramos el services en el constructor del componente.</p>
+        <p><span style="color:rgb(173, 21, 173)">constructor</span>( <span>private</span> _nameServices:<span style="color:rgb(226, 43, 52)"> NameServices</span> )</p>
+        <p>Luego lo llamamos en una funcion correspondiente.</p>
+        <hr>
+        <textarea [innerHTML]="exampleComponent"></textarea>
+    </div>
+</div>
