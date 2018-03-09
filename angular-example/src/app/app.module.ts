@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 // Components
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { RouterExampleComponent } from './content/router-example/router-example.
 
 // Services
 import { ListService } from './list.service';
+import { FormValidationComponent } from './content/form-validation/form-validation.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,16 @@ import { ListService } from './list.service';
     ListComponent,
     ModalExampleComponent,
     ServicesApiComponent,
-    RouterExampleComponent
+    RouterExampleComponent,
+    FormValidationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   ],
   providers: [ListService],
   bootstrap: [AppComponent]

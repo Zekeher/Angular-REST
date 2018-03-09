@@ -1,0 +1,22 @@
+<div class="container">
+    <a class="back" [routerLink]="['/']">Volver</a>
+    <hr>
+    <h2>Validacion de formulario basico</h2>
+    <form #nameForm="ngForm" (ngSubmit)="onFormSubmit(nameForm)">
+        <div class="form-group">
+            <label for="title">Titulo del modal</label>
+            <input id="title" name="title" ngModel required #title="ngModel" class="form-control" placeholder="Ingrese un titulo...">
+            <span class="required-error" *ngIf="title.invalid">Campo requerido</span>
+        </div>
+        <div class="form-group">
+            <label for="content-file">Contenido del modal</label>
+            <textarea name="content" ngModel required #content="ngModel" id="content-file" class="form-control" rows="12" placeholder="Ingrese el contenido..."></textarea>
+            <span class="required-error" *ngIf="content.invalid">Campo requerido</span>
+        </div>
+        <div class="btn-group pull-right" role="group" aria-label="opciones para enviar">
+            <button type="submit" aria-label="Enviar archivo" class="btn btn-danger" [disabled]="nameForm.invalid">Enviar</button>
+            <button type="button" aria-label="cancelar y volver al inicio" class="btn btn-default" [routerLink]="['/']">Cancelar</button>
+        </div>
+    </form>
+</div>
+<view-modal (hideModal)="hiddenModal($event) " [getModal]="dataModal "></view-modal>

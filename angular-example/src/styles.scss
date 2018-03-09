@@ -61,3 +61,14 @@ textarea {
         }
     }
 }
+
+.form-group {
+    position: relative;
+    .required-error {
+        margin-top: 5px;
+        color: $red;
+        position: absolute;
+        top: -2px;
+        right: 0px;
+    }
+}
