@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UploadFile } from '../../models/UploadFile';
+import { UploadFile } from './models/UploadFile';
 import * as _ from "lodash";
 
 @Component({
