@@ -2,5 +2,6 @@
     { "id": 1, "title": "Modal para Angular", "detail": "Modal by Zekeher", "path": "modal-angular" },
     { "id": 2, "title": "Services", "detail": "Como llamar servicios API", "path": "services-api" },
     { "id": 3, "title": "Router Param", "detail": "Como obtener parametros atravez del routing", "path": "router/bonit@" },
-    { "id": 3, "title": "Form Validation", "detail": "Como validar un formulario con angular (basico)", "path": "form-validation" }
+    { "id": 4, "title": "Form Validation", "detail": "Como validar un formulario con angular (basico)", "path": "form-validation" },
+    { "id": 5, "title": "Drop & drag File", "detail": "Como subir Files con drop & drag", "path": "drop-file" }
 ]

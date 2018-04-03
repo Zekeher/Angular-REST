@@ -17,6 +17,8 @@ import { RouterExampleComponent } from './content/router-example/router-example.
 // Services
 import { ListService } from './list.service';
 import { FormValidationComponent } from './content/form-validation/form-validation.component';
+import { DropFileComponent } from './content/drop-file/drop-file.component';
+import { FileDropDirective } from './content/drop-file/file-drop.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FormValidationComponent } from './content/form-validation/form-validati
     ModalExampleComponent,
     ServicesApiComponent,
     RouterExampleComponent,
-    FormValidationComponent
+    FormValidationComponent,
+    DropFileComponent,
+    FileDropDirective
   ],
   imports: [
     BrowserModule,

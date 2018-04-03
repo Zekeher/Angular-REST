@@ -60,15 +60,8 @@ export class AzureStorageService {
 
 // En el environment de angular vamos a declarar la configuracion para la conexion con Azure
 
-
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-
 export const environment = {
-    production: false,
-    // generamos dentro del json o array un parametro azureContainers ( podes ponerle el nombre que quieras , mientras que sepas hacer)
+    // generamos dentro del json o array un parametro azureContainers ( podes ponerle el nombre que quieras , mientras que sepas que hacer)
     azureContainers: {
         storageHost: 'nameHost',
         baseUrl: '.blob.core.windows.net/',
