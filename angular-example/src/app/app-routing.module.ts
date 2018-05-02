@@ -6,6 +6,7 @@ import { ServicesApiComponent } from './content/services-api/services-api.compon
 import { RouterExampleComponent } from './content/router-example/router-example.component';
 import { FormValidationComponent } from './content/form-validation/form-validation.component';
 import { DropFileComponent } from './content/drop-file/drop-file.component';
+import { JqueryJavascriptComponent } from './content/jquery-javascript/jquery-javascript.component';
 
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'router/:example', component: RouterExampleComponent },  
     { path: 'form-validation', component: FormValidationComponent }, 
     { path: 'drop-file', component: DropFileComponent }, 
+    { path: 'jquery', component: JqueryJavascriptComponent },
     { path: '**', redirectTo: '' },
 ];
 

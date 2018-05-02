@@ -1,0 +1,29 @@
+<div class="container">
+    <a class="back" [routerLink]="['/']">Volver</a>
+    <hr>
+    <h2>Usar Jquery & JavaScript en Angular</h2>
+    <p>En este componente vas a aprender como usar Jquery y JavaScript en Angular</p>
+    <ul>
+        <li>
+            Necesitamos instalar las siguientes independecias:
+            <ol>
+                <li>npm install --save <span style="color:rgb(226, 101, 43)">jquery</span></li>
+                <li>npm install --save <span style="color:rgb(226, 101, 43)">@types/jquery</span></li>
+            </ol>
+        </li>
+        <li>
+            Luego declaramos la libreria en <span style="color:rgb(173, 21, 173)">angular-cli.json</span> en la parte "<span style="color:rgb(226, 101, 43)">scripts</span>".
+        </li>
+    </ul>
+    <hr>
+    <div class="code-example">
+        <h3 class="title">Declaracion en angular-cli</h3>
+        <p>Aca muestro un simple ejemplo de como se deberia declarar en angular-cli</p>
+        <textarea>{{exampleAngularCli}}</textarea>
+    </div>
+    <div class="code-example">
+        <h3 class="title">Importar Jquery en un Componente</h3>
+        <p>Aca muestro como se deberia importar Jquery para utilizarlo en nuestro codigo.</p>
+        <p><span style="color:rgb(173, 21, 173)">import</span> <span style="color:rgb(226, 101, 43)">*</span> as <span style="color:rgb(173, 21, 173)">$</span> from '<span style="color:rgb(226, 101, 43)">jquery</span>';</p>
+    </div>
+</div>

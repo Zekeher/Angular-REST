@@ -19,6 +19,7 @@ import { ListService } from './list.service';
 import { FormValidationComponent } from './content/form-validation/form-validation.component';
 import { DropFileComponent } from './content/drop-file/drop-file.component';
 import { FileDropDirective } from './content/drop-file/file-drop.directive';
+import { JqueryJavascriptComponent } from './content/jquery-javascript/jquery-javascript.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FileDropDirective } from './content/drop-file/file-drop.directive';
     RouterExampleComponent,
     FormValidationComponent,
     DropFileComponent,
-    FileDropDirective
+    FileDropDirective,
+    JqueryJavascriptComponent
   ],
   imports: [
     BrowserModule,
